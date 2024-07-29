@@ -1,5 +1,27 @@
-# hello-world-javascript-action
+# Hello world javascript action
 
-以下のドキュメントを参考に作成する JavaScript アクション。
+This action prints "Hello World" or "Hello" + the name of a person to greet to the log.
+
+以下のドキュメントを参考に TypeScript で作成した JavaScript アクション。
 
 https://docs.github.com/ja/actions/creating-actions/creating-a-javascript-action
+
+## Inputs
+
+### `who-to-greet`
+
+**Required** The name of the person to greet. Default `"World"`.
+
+## Outputs
+
+### `time`
+
+The time we greeted you.
+
+## Example usage
+
+```yaml
+uses: actions/hello-world-javascript-action@e76147da8e5c81eaf017dede5645551d4b94427b
+with:
+  who-to-greet: "Mona the Octocat"
+```
