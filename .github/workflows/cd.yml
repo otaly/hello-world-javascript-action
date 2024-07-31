@@ -1,10 +1,10 @@
-name: CI
+name: CD
 
 on: push
 
 jobs:
-  test:
-    name: Test
+  bundle:
+    name: Bundle
     runs-on: ubuntu-latest
 
     steps:
@@ -26,5 +26,13 @@ jobs:
       - name: Install
         run: npm ci
 
-      - name:  Check Format & Lint
-        run: npm run check
+      - name: Format & Lint
+        run: npm run check:write
+
+      - name: Bundle
+        run: npm run bundle
+
+      - name: Commit
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Apply format, lint, and bundle
