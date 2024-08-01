@@ -6,6 +6,10 @@ This action prints "Hello World" or "Hello" + the name of a person to greet to t
 
 https://docs.github.com/ja/actions/creating-actions/creating-a-javascript-action
 
+## CI/CD Workflow
+
+フォーマット、Lintを適用してビルド、package.json の `version` を元にtagを作成する。
+
 ## Inputs
 
 ### `who-to-greet`
@@ -21,7 +25,7 @@ The time we greeted you.
 ## Example usage
 
 ```yaml
-uses: actions/hello-world-javascript-action@e76147da8e5c81eaf017dede5645551d4b94427b
+uses: otaly/hello-world-javascript-action@v1.0.1
 with:
   who-to-greet: "Mona the Octocat"
 ```
