@@ -38,3 +38,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: Apply format, lint, and bundle
+          tagging_message: v1.0.0
