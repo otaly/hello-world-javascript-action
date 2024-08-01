@@ -42,6 +42,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: Apply format, lint, and bundle
-          tagging_message: |
-            ${{ steps.tag-name.outputs.tag }}
-            v1
+          tagging_message: ${{ steps.tag-name.outputs.tag }}
