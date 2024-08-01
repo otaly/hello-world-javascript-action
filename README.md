@@ -1,4 +1,4 @@
-# Hello world javascript action
+# Hello world typescript action
 
 This action prints "Hello World" or "Hello" + the name of a person to greet to the log.
 
@@ -25,7 +25,7 @@ The time we greeted you.
 ## Example usage
 
 ```yaml
-uses: otaly/hello-world-javascript-action@v1.0.1
+uses: otaly/hello-world-typescript-action@v1.0.1
 with:
   who-to-greet: "Mona the Octocat"
 ```

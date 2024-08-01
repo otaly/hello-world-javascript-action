@@ -1,5 +1,5 @@
 {
-  "name": "Hello world javascript action",
+  "name": "Hello world typescript action",
   "image": "mcr.microsoft.com/devcontainers/typescript-node:1-20-bookworm",
   "postCreateCommand": "npm install",
   "customizations": {

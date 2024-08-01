@@ -1,5 +1,5 @@
 {
-  "name": "hello-world-javascript-action",
+  "name": "hello-world-typescript-action",
   "version": "v1.0.1",
   "description": "サンプルの JavaScript アクション。",
   "main": "dist/index.js",
