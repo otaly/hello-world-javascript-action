@@ -36,7 +36,7 @@ jobs:
 
       - name: Set tag name
         id: tag-name
-        run: echo "::set-output name=tag::$(cat package.json | jq -r .version)"
+        run: echo "tag=$(cat package.json | jq -r .version)" >> $GITHUB_OUTPUT
 
       - name: Commit
         uses: stefanzweifel/git-auto-commit-action@v5
