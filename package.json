@@ -1,6 +1,6 @@
 {
   "name": "hello-world-javascript-action",
-  "version": "1.0.0",
+  "version": "v1.0.1",
   "description": "サンプルの JavaScript アクション。",
   "main": "dist/index.js",
   "scripts": {

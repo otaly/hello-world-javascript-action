@@ -34,8 +34,12 @@ jobs:
       - name: Bundle
         run: npm run bundle
 
+      - name: Set tag name
+        id: tag-name
+        run: echo "::set-output name=tag::$(cat package.json | jq -r .version)"
+
       - name: Commit
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: Apply format, lint, and bundle
-          tagging_message: v1.0.0
+          tagging_message: ${{ steps.tag-name.outputs.tag }}
